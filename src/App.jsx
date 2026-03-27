@@ -1,9 +1,7 @@
+import Home from './pages/Home'
+
 function App() {
-    return (
-        <div>
-            <h1 className="text-3xl font-bold text-blue-600">React Assignment Started 🚀</h1>
-        </div>
-    )
+    return <Home />
 }
 
 export default App
