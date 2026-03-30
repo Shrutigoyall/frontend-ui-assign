@@ -14,11 +14,10 @@ import {
 
 function Sidebar() {
     return (
-        <aside className="w-[235px] bg-white border-r border-slate-200 min-h-screen px-5 py-6 hidden md:block">
+        <aside className="hidden min-h-screen w-[235px] border-r border-slate-200 bg-white px-5 py-6 md:block">
             <div className="space-y-8">
-                {/* My Projects */}
                 <div>
-                    <p className="text-xs font-semibold text-slate-400 mb-4 uppercase">
+                    <p className="mb-4 text-xs font-semibold uppercase text-slate-400">
                         My Projects
                     </p>
                     <nav className="space-y-2">
@@ -28,9 +27,8 @@ function Sidebar() {
                     </nav>
                 </div>
 
-                {/* Orchestrator */}
                 <div>
-                    <p className="text-xs font-semibold text-slate-400 mb-4 uppercase">
+                    <p className="mb-4 text-xs font-semibold uppercase text-slate-400">
                         Orchestrator
                     </p>
                     <nav className="space-y-2">
@@ -46,9 +44,8 @@ function Sidebar() {
                     </nav>
                 </div>
 
-                {/* Admin */}
                 <div>
-                    <p className="text-xs font-semibold text-slate-400 mb-4 uppercase">
+                    <p className="mb-4 text-xs font-semibold uppercase text-slate-400">
                         Admin
                     </p>
                     <nav className="space-y-2">
@@ -64,8 +61,8 @@ function Sidebar() {
 function SidebarItem({ label, icon: Icon, active = false }) {
     return (
         <button
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition ${active
-                ? 'bg-indigo-50 text-indigo-600 border-l-4 border-indigo-600'
+            className={`flex w-full items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition ${active
+                ? 'border-l-4 border-indigo-600 bg-indigo-50 text-indigo-600'
                 : 'text-slate-600 hover:bg-slate-50'
                 }`}
         >
